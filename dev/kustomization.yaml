@@ -1,0 +1,6 @@
+# Adds namespace to all resources.
+namespace: sequencer-system
+
+resources:
+- ../rbac
+- ../manager
