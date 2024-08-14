@@ -147,7 +147,7 @@ func main() {
 
 	if err = (&controller.DNSRecordReconciler{
 		DefaultProvider: providers.DefaultProvider(),
-		EventRecorder:   mgr.GetEventRecorderFor("dnsrecorders"),
+		EventRecorder:   mgr.GetEventRecorderFor("dnsrecord"),
 		Client:          mgr.GetClient(),
 		Scheme:          mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {
